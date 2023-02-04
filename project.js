@@ -239,4 +239,7 @@ app.listen(3000, () => {
     console.log("Listening on port 3000 ...");
 });
 
-//short reflection as a JS comment in which you explain (1) how programs communicate in what order to each other for a given purpose, (2) what you learned in this project and (3) how can this project be further extended.
+//short reflection as a JS comment in which you explain (1) how programs communicate in what order to each other for a given purpose, (2) what you learned in this project and (3) how can this project be further extended
+//（1） Programs could communicate through an API for given purposes. For example, if I were to add a song to a new genre, I would first create the genre of songs using the post request that I made for genres, then check using the get genres requests to see that it is there and what its id is. Next I would use the post song request to add a song in there. I can check using the get songs request for the songs. If I made a mistake, I could use the delete songs request or the put song request to either delete or change some information. Same for the genres. Of course, all requests are sent through an API, which for us is Postman.
+// (2) I learned how to record data as well as get, add, change, and delete data by writing functions through javascript and operating them using an API, Postman. I also learned how to use the basic functions of Postman.
+// (3) Some things that could be added to the project would be to filter by singers or artist which would allow the user to find relevant songs to a singer they like.
